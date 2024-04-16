@@ -8,14 +8,14 @@ public class DogLauncher{
         Dog sandra = new Dog();
 
         // Golga
-        olga.name = "olga";
-        olga.breed = "toy poodle";
-        olga.weight = 3;
+        olga.setName = "olga";
+        olga.setBreed = "toy poodle";
+        olga.setSize = 3;
 
         //Sandwa
-        sandra.name = "sandra";
-        sandra.breed = "half labra, half noypi";
-        sandra.weight = 25;
+        sandra.setName = "sandra";
+        sandra.setBreed = "half labra, half noypi";
+        sandra.setSize = 25;
 
         olga.bark();
         sandra.bark();
