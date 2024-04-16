@@ -77,13 +77,15 @@ public class BattleShip{
 //            }
 //
 //        }
-        for(int i = 0; i < grid.length; i++){
-            for(int j = 0; j < grid[i].length; j++){
-                System.out.printf("%-20s",grid[i][j] + ", ");
+        for(int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                System.out.printf("%-20s", grid[i][j] + ", ");
             }
             System.out.println();
 
         }
+        // TODO: Implement guess functionality.
+
     }
 
 }
