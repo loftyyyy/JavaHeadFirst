@@ -85,6 +85,11 @@ public class BattleShip{
 
         }
         // TODO: Implement guess functionality.
+        boolean guessed = false;
+
+        while(!guessed){
+            
+        }
 
     }
 
