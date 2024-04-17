@@ -89,6 +89,24 @@ public class BattleShip{
 
         }
     }
+    private boolean checkFieldEmpty() {
+        boolean completed = false;
+        int target = 49;
+        int current = 0;
+
+        for(int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if(grid[i][j].equals("X")){
+                    current += 1;
+                }
+            }
+        }
+        if(current == 49){
+            completed = true;
+        }
+        return completed;
+
+    }
 
     void startGame(){
         generateField();
@@ -120,14 +138,17 @@ public class BattleShip{
                     for (int j = 0; j < grid[i].length; j++) {
                         if(target.equals(grid[i][j])){
                             grid[i][j] = "X";
-                        }else{
-                            System.out.println("Excellent! You destroyed all of them!!!");
-                            System.out.println();
                         }
                     }
-
+                }
+                if(checkFieldEmpty()){
+                    System.out.println("Excellent! You destroyed all of them!!!");
+                    System.out.println("Number of guesses: " + guesses);
+                    guessed = true;
                 }
                 showField();
+            }else{
+                System.out.println("Yous dumb!");
             }
 
 
