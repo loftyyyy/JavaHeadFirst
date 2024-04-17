@@ -79,6 +79,16 @@ public class BattleShip{
 
         }
     }
+    private void showField(){
+
+        for(int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                System.out.printf("%-20s", grid[i][j] + " ");
+            }
+            System.out.println();
+
+        }
+    }
 
     void startGame(){
         generateField();
@@ -90,13 +100,7 @@ public class BattleShip{
 //            }
 //
 //        }
-        for(int i = 0; i < grid.length; i++) {
-            for (int j = 0; j < grid[i].length; j++) {
-                System.out.printf("%-20s", grid[i][j] + " ");
-            }
-            System.out.println();
-
-        }
+        showField();
         // TODO: Implement guess functionality.
         boolean guessed = false;
         Scanner input = new Scanner(System.in);
@@ -107,6 +111,24 @@ public class BattleShip{
             String guess = input.nextLine();
             String[] split = guess.split("");
             guesses += 1;
+
+            if(!grid[yLabel.indexOf(split[0])][Integer.parseInt(split[1])].equals("X")){
+                System.out.println(grid[yLabel.indexOf(split[0])][Integer.parseInt(split[1])] + " is found and has been killed!");
+                String target = grid[yLabel.indexOf(split[0])][Integer.parseInt(split[1])];
+
+                for(int i = 0; i < grid.length; i++) {
+                    for (int j = 0; j < grid[i].length; j++) {
+                        if(target.equals(grid[i][j])){
+                            grid[i][j] = "X";
+                        }else{
+                            System.out.println("Excellent! You destroyed all of them!!!");
+                            System.out.println();
+                        }
+                    }
+
+                }
+                showField();
+            }
 
 
 
