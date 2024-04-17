@@ -1,13 +1,16 @@
 
 package com.mycompany.app;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class BattleShip{
     private String finalGuess;
     private String tbd;
     private String[][] grid = new String[7][7];
-    private String[] yLabel = {"A","B","C","D","E","F","G"};
+    private ArrayList<String> yLabel = new ArrayList<>(Arrays.asList("G","F","E","D","C","B","A"));
     private String[] startUpNames = {"SparkForge","AstraFlow","Kinect","Veridify"};
 
 
@@ -23,8 +26,8 @@ public class BattleShip{
         firstRN = 5;
         secondRN = 0;
         for(int i = 0; i < 3; i++){
-//            firstRN = randomNumber.nextInt(7);
-//            secondRN = randomNumber.nextInt(7);
+            firstRN = randomNumber.nextInt(7);
+            secondRN = randomNumber.nextInt(7);
             vertiHori = randomNumber.nextInt(2);
             startUpNameRN = randomNumber.nextInt(4);
             System.out.println(firstRN + "," + secondRN);
@@ -67,8 +70,18 @@ public class BattleShip{
         }
 
     }
+    private void generateField(){
+
+        for(int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                grid[i][j] = "X";
+            }
+
+        }
+    }
 
     void startGame(){
+        generateField();
         generateShip();
 
 //        for(int i = 0; i < grid.length; i++){
@@ -79,16 +92,24 @@ public class BattleShip{
 //        }
         for(int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
-                System.out.printf("%-20s", grid[i][j] + ", ");
+                System.out.printf("%-20s", grid[i][j] + " ");
             }
             System.out.println();
 
         }
         // TODO: Implement guess functionality.
         boolean guessed = false;
+        Scanner input = new Scanner(System.in);
+        int guesses = 0;
 
         while(!guessed){
-            
+            System.out.println("Guess? ");
+            String guess = input.nextLine();
+            String[] split = guess.split("");
+            guesses += 1;
+
+
+
         }
 
     }
