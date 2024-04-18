@@ -150,16 +150,12 @@ public class BattleShip{
                     if(again.equals("y")){
 
                         startGame();
-
                     }
-
                 }
                 showField();
             }else{
                 System.out.println("Yous dumb!");
             }
-
-
 
         }
 
