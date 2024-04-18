@@ -145,6 +145,14 @@ public class BattleShip{
                     System.out.println("Excellent! You destroyed all of them!!!");
                     System.out.println("Number of guesses: " + guesses);
                     guessed = true;
+                    System.out.println("Do you want to play again?[y/n]: ");
+                    String again = input.nextLine();
+                    if(again.equals("y")){
+
+                        startGame();
+
+                    }
+
                 }
                 showField();
             }else{
