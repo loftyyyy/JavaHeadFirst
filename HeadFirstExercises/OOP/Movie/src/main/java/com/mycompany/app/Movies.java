@@ -7,6 +7,7 @@ public class Movies{
     String genre;
     int rating;
 
+
     void playIt(){
         System.out.println("Playing moviee.....");
     }
