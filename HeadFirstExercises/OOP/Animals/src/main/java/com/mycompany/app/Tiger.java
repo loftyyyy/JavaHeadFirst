@@ -1,3 +1,3 @@
-public class Tiger extends Animals{
+public class Tiger extends Feline{
 
 }

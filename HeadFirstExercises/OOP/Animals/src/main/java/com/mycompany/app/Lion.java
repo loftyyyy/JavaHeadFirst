@@ -1,4 +1,4 @@
-public class Lion extends Animals{
+public class Lion extends Feline{
 
 
     void makeNoise(){

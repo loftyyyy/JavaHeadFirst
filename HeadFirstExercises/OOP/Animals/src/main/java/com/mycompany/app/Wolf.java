@@ -1,3 +1,3 @@
-public class Wolf extends Animals {
+public class Wolf extends Canine {
 
 }
