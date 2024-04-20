@@ -1,9 +1,9 @@
 public class Animals{
-    private String picture;
-    private String food;
-    private String hunger;
-    private String boundaries;
-    private String location;
+    public String picture;
+    public String food;
+    public String hunger;
+    public String boundaries;
+    public String location;
 
     void MakeNoise(){
 
