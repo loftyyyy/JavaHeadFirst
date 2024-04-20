@@ -6,6 +6,9 @@ package com.mycompany.app;
  */
 public class App {
     public static void main(String[] args){
+        Animals animalss;
+        animalss = new Dog();
+        animalss.makeNoise();
         Animals[] animals = new Animals[6];
 
         animals[0] = new Dog();

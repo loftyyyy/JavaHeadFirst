@@ -1,6 +1,6 @@
 
 package com.mycompany.app;
-public class Animals{
+abstract public class Animals{
 
     public String picture;
     public String food;
@@ -10,7 +10,6 @@ public class Animals{
 
     void makeNoise(){
         System.out.println("Aghh");
-
     }
 
     void eat(){
