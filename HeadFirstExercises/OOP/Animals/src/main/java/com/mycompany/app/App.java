@@ -6,12 +6,25 @@ package com.mycompany.app;
  */
 public class App {
     public static void main(String[] args){
+        Animals[] animals = new Animals[6];
 
-        Animals dog = new Dog();
-        dog.food = "meat";
-        dog.makeNoise();
-        dog.roam();
-        System.out.println(dog.food);
+        animals[0] = new Dog();
+        animals[1] = new Cat();
+        animals[2] = new Hippo();
+        animals[3] = new Wolf();
+        animals[4] = new Tiger();
+        animals[5] = new Lion();
+
+        animals[0].makeNoise();
+
+//        Vet dogVet = new Vet();
+//        Animals dog = new Dog();
+//        dog.food = "meat";
+//        dog.makeNoise();
+//        dog.roam();
+//        dogVet.inject(dog);
+//        System.out.println(dog.food);
+
 
     }
 }
