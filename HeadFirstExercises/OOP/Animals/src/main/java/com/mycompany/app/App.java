@@ -20,6 +20,11 @@ public class App {
 
         animals[0].makeNoise();
 
+        Object dog1 = new Dog();
+        Dog d = (Dog) dog1;
+        System.out.println(dog1.hashCode());
+        d.makeNoise();
+
 //        Vet dogVet = new Vet();
 //        Animals dog = new Dog();
 //        dog.food = "meat";
