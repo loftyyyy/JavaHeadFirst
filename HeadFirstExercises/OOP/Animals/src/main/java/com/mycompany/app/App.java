@@ -24,6 +24,7 @@ public class App {
         Dog d = (Dog) dog1;
         System.out.println(dog1.hashCode());
         d.makeNoise();
+        d.test();
 
 //        Vet dogVet = new Vet();
 //        Animals dog = new Dog();
