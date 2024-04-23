@@ -1,6 +1,6 @@
 
 package com.mycompany.app;
-abstract public class Animals{
+public abstract class Animals{
 
     public String picture;
     public String food;

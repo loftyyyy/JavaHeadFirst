@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-interface Pet {
+public interface Pet {
 
     abstract void behave();
 

@@ -1,22 +1,25 @@
 
 package com.mycompany.app;
-public class Dog extends Canine implements Pet{
+public class Dog extends Canine{
 
     void makeNoise(){
+        super.makeNoise();
         System.out.println("Arf arf");
     }
     void test(){
-        System.out.print("hel");
+        System.out.println("hel");
     }
 
-    @Override
-    public void behave(){
 
-    }
 
-    @Override
-    public void beCute(){
-
-    }
+//    @override
+//    public void behave(){
+//
+//    }
+//
+//    @override
+//    public void becute(){
+//
+//    }
 
 }
