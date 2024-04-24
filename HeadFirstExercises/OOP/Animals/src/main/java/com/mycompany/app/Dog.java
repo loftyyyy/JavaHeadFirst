@@ -2,6 +2,12 @@
 package com.mycompany.app;
 public class Dog extends Canine{
 
+    private String name;
+    // An example of a constructor this gets called before it gets assigned to a reference variable
+    protected Dog(String x){
+        name = x;
+        System.out.println("I have been called " + name);
+    }
     void makeNoise(){
         super.makeNoise();
         System.out.println("Arf arf");
@@ -9,6 +15,8 @@ public class Dog extends Canine{
     void test(){
         System.out.println("hel");
     }
+
+
 
 
 

@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args){
         Animals[] animals = new Animals[6];
 
-        animals[0] = new Dog();
+        animals[0] = new Dog("John");
         animals[1] = new Cat();
         animals[2] = new Hippo();
         animals[3] = new Wolf();
@@ -17,7 +17,7 @@ public class App {
 
         animals[0].makeNoise();
 
-        Object dog1 = new Dog();
+        Object dog1 = new Dog("James");
         Dog d = (Dog) dog1;
         System.out.println(dog1.hashCode());
         d.makeNoise();
