@@ -23,7 +23,7 @@ public class App {
         d.makeNoise();
         d.behave();
         d.test();
-        System.out.println(Contant.escapeVelocity);
+        System.out.println(Constant.escapeVelocity);
 
 //        Vet dogVet = new Vet();
 //        Animals dog = new Dog();
