@@ -6,7 +6,13 @@ public class Dog extends Canine{
     private int age;
     // An example of a constructor this gets called before it gets assigned to a reference variable
     protected Dog(int age){
+        super("Dog");
         this.age = age;
+    }
+    protected void dobject(Animals d){
+        Animals a = d;
+        a.makeNoise();
+
     }
     protected Dog(String x){
         this(32);
@@ -20,6 +26,7 @@ public class Dog extends Canine{
     void test(){
         System.out.println("hel");
     }
+
 
 
 

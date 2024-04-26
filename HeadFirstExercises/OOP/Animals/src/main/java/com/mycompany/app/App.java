@@ -23,6 +23,7 @@ public class App {
         d.makeNoise();
         d.behave();
         d.test();
+        d.dobject(animals[0]);
         System.out.println(Constant.escapeVelocity);
 
 //        Vet dogVet = new Vet();
