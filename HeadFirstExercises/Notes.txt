@@ -1,0 +1,3 @@
+JVM Stack stores Local Variable and Method Invocations
+JVM Heap stores Objects and Instance Variables
+    A state is a value of the instance variable
