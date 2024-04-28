@@ -24,12 +24,12 @@ public class Decrypt {
             }else{
                 if(Character.isUpperCase(message.charAt(i))){
                     int pos = CONSTANTS.ALPHABET.indexOf(message.charAt(i));
-                    int decryptedPos = (pos + shift) % 26;
+                    int decryptedPos = (pos - shift) % 26;
                     decryptedMessage += CONSTANTS.ALPHABET.charAt(decryptedPos);
                 }else if(Character.isLowerCase(message.charAt(i))){
 
                     int pos = CONSTANTS.alphabet.indexOf(message.charAt(i));
-                    int decryptedPos = (pos + shift) % 26;
+                    int decryptedPos = (pos - shift) % 26;
                     decryptedMessage += CONSTANTS.alphabet.charAt(decryptedPos);
                 }
             }
