@@ -24,18 +24,18 @@ public class Decrypt {
             }else{
                 if(Character.isUpperCase(message.charAt(i))){
                     int pos = CONSTANTS.ALPHABET.indexOf(message.charAt(i));
-                    int decryptedPos = (pos - shift) % 26;
-                    if(decryptedPos < 0){
-                        decryptedPos = CONSTANTS.ALPHABET.length() + decryptedPos;
-                    }
+                    int decryptedPos = ((pos - shift) + 26)%26;
+//                    if(decryptedPos < 0){
+//                        decryptedPos = CONSTANTS.ALPHABET.length() + decryptedPos;
+//                    }
                     decryptedMessage += CONSTANTS.ALPHABET.charAt(decryptedPos);
                 }else if(Character.isLowerCase(message.charAt(i))){
 
                     int pos = CONSTANTS.alphabet.indexOf(message.charAt(i));
-                    int decryptedPos = (pos - shift) % 26;
-                    if(decryptedPos < 0){
-                        decryptedPos = CONSTANTS.alphabet.length() + decryptedPos;
-                    }
+                    int decryptedPos = ((pos - shift) + 26) % 26;
+//                    if(decryptedPos < 0){
+//                        decryptedPos = CONSTANTS.alphabet.length() + decryptedPos;
+//                    }
                     decryptedMessage += CONSTANTS.alphabet.charAt(decryptedPos);
                 }
             }
