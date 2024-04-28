@@ -4,8 +4,27 @@ import java.util.*;
 public class CaesarCypher {
 
     public static void main(String[] args){
-        Encrypt encrypt = new Encrypt("James", 3);
+        Scanner input = new Scanner(System.in);
 
+
+        System.out.print("What's the message? ");
+        String message = input.nextLine();
+        System.out.print("The amount of shift? ");
+        int shift = input.nextInt();
+        input.nextLine();
+
+        System.out.print("What do you want to do? \n [1] Encrypt: \n [2] Decrypt: \n Choice[1,2]: ");
+        String userChoice = input.nextLine();
+
+        if(userChoice.equals("1")){
+            Encrypt encrypt = new Encrypt(message, shift);
+
+        }else if(userChoice.equals("2")){
+            Decrypt decrypt = new Decrypt(message, shift);
+
+        }else{
+            System.out.println("Error! Something went wrong");
+        }
 
 //        for(int i = 0; i < messageList.length; i++){
 //            if(messageList[i].equals(" ")){

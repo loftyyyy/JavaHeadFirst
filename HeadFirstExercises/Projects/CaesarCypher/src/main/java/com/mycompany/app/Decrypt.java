@@ -2,39 +2,40 @@ package com.mycompany.app;
 
 import java.util.Scanner;
 
-import java.util.*;
-public class Encrypt {
+public class Decrypt {
     String message;
     int shift;
 
-    public Encrypt(String message, int shift){
+    public Decrypt(String message, int shift){
         this.message = message;
         this.shift = shift;
 
-        encryptingProcess();
+        decryptingProcess();
     }
 
-    private void encryptingProcess(){
-        String encryptedMessage = "";
+    private void decryptingProcess(){
+
+        String decryptedMessage = "";
 
         for(int i = 0; i < message.length(); i++){
             if(message.charAt(i) == ' '){
-                encryptedMessage += " ";
+
+                decryptedMessage += ' ';
             }else{
                 if(Character.isUpperCase(message.charAt(i))){
                     int pos = CONSTANTS.ALPHABET.indexOf(message.charAt(i));
-                    int encryptedPos = (pos + shift) % 26;
-                    encryptedMessage += CONSTANTS.ALPHABET.charAt(encryptedPos);
-
+                    int decryptedPos = (pos + shift) % 26;
+                    decryptedMessage += CONSTANTS.ALPHABET.charAt(decryptedPos);
                 }else if(Character.isLowerCase(message.charAt(i))){
 
                     int pos = CONSTANTS.alphabet.indexOf(message.charAt(i));
-                    int encryptedPos = (pos + shift) % 26;
-                    encryptedMessage += CONSTANTS.alphabet.charAt(encryptedPos);
+                    int decryptedPos = (pos + shift) % 26;
+                    decryptedMessage += CONSTANTS.alphabet.charAt(decryptedPos);
                 }
             }
-
         }
-        System.out.println("The encrypted Message is: " + encryptedMessage);
+
+        System.out.println("Decrypted Message: " + decryptedMessage);
+
     }
 }
