@@ -18,5 +18,8 @@ public class JukeBox {
         songsV3s.sort(compareByArtist);
         System.out.println("After sort: " + songsV3s);
 
+        for(SongsV3 songs : songsV3s){
+            System.out.println(songs);
+        }
     }
 }
