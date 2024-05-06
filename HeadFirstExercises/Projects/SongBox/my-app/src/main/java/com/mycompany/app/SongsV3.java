@@ -25,10 +25,10 @@ public class SongsV3 implements Comparable<SongsV3>{
     }
 
     public String toString(){
-        return this.author;
+        return this.title ;
     }
 
-
+    @Override
     public int compareTo(SongsV3 songsV3) {
         return title.compareTo(songsV3.getTitle());
     }
