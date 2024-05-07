@@ -21,5 +21,6 @@ public class JukeBox {
         for(SongsV3 songs : songsV3s){
             System.out.println(songs);
         }
+        //TODO Study comparable and comparators
     }
 }
