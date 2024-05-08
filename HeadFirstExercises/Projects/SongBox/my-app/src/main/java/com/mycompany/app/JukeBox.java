@@ -22,5 +22,6 @@ public class JukeBox {
             System.out.println(songs);
         }
         //TODO Study comparable and comparators
+        // it is kind of duumb and confusing but we'll get through this
     }
 }
