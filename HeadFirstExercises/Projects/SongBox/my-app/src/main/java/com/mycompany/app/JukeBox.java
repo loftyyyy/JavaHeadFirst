@@ -23,5 +23,6 @@ public class JukeBox {
         }
         //TODO Study comparable and comparators
         // it is kind of duumb and confusing but we'll get through this
+        // Sucks to be me right now but I'm hard grinding calculus right now so I'm not able to take part in this
     }
 }
