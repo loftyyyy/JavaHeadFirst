@@ -20,5 +20,6 @@ public class Singleton {
             }
         }
         return instance;
+        //TODO Damn I'm so tired like what the fuck is going on?
     }
 }
