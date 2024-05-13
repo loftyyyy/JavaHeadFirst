@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-public class SongsV3 implements Comparable<SongsV3>{
+public class SongsV3 {
 
     private String title;
     private String author;
@@ -28,8 +28,4 @@ public class SongsV3 implements Comparable<SongsV3>{
         return this.title ;
     }
 
-    @Override
-    public int compareTo(SongsV3 songsV3) {
-        return title.compareTo(songsV3.getTitle());
-    }
 }

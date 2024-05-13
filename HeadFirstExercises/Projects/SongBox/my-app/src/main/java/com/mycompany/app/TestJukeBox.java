@@ -1,7 +1,5 @@
 package com.mycompany.app;
 
-import java.util.Collections.*;
-import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Collections.sort;
@@ -9,7 +7,7 @@ import static java.util.Collections.sort;
 public class TestJukeBox {
 
     public static void main(String[] args){
-        CompareByTitle ct = new CompareByTitle();
+        MockCompareByTitle ct = new MockCompareByTitle();
         MockCompareByArtist ca = new MockCompareByArtist();
 
         List<Songs> currentAlbum = ReviewMockUpSong.getSongs();
