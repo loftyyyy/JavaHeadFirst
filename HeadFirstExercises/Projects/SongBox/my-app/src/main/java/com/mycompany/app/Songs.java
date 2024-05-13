@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-public class Songs {
+public class Songs  {
     private String title;
     private String author;
 
@@ -17,8 +17,13 @@ public class Songs {
         return author;
     }
 
-    @Override
-    public String toString() {
-        return this.author;
-    }
+//    @Override
+//    public int compareTo(Songs o) {
+//        return this.author.compareTo(o.author);
+//    }
+
+//    @Override
+//    public String toString() {
+//        return this.title;
+//    }
 }
