@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ReviewMockUpSong {
 
-    public List<Songs> getSongs(){
+    public static List<Songs> getSongs(){
         List<Songs> songsList = new ArrayList<>();
 
         songsList.add(new Songs("N.h.i.e","21 Savage"));

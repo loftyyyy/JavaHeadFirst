@@ -17,6 +17,8 @@ public class Songs {
         return author;
     }
 
-
-
+    @Override
+    public String toString() {
+        return this.author;
+    }
 }
