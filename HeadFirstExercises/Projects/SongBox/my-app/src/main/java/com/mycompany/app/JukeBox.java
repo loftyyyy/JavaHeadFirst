@@ -11,6 +11,7 @@ public class JukeBox {
         CompareByTitle compareByTitle = new CompareByTitle();
 
 
+
         System.out.println("Before sort: ");
         for(SongsV3 s : songsV3s){
             System.out.println(s.getTitle());
