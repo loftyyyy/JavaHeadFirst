@@ -10,7 +10,8 @@ public class ReviewJukeBox {
         ArrayList<ReviewSongs> songs = ReviewMockUpSong2.getSongs();
         ReviewSortByTitle sortTitle = new ReviewSortByTitle();
         ReviewCompareByArtist sortArtist = new ReviewCompareByArtist();
-        songs.sort(sortArtist);
+        //Lambda's
+        songs.sort((o1, o2) -> o1.getAuthor().compareTo(o2.getAuthor()));
 
         for(ReviewSongs song: songs){
             System.out.println(song.getAuthor());
