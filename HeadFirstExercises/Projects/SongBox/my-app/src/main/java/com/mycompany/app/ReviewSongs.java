@@ -24,5 +24,8 @@ public class ReviewSongs {
         this.bpm = b;
     }
 
-
+    @Override
+    public String toString() {
+        return getAuthor() + ", " + getTitle() + ", " + getBpm();
+    }
 }

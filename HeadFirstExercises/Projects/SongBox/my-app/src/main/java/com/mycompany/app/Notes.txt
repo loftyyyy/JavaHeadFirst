@@ -1,0 +1,11 @@
+S.A.M -> Single Abstract Methods or Functional Interfaces are interfaces that only have one method.
+
+Lambda - these can only be used on Functional Interfaces.
+
+Collections:
+    List - When sequence matters.
+    Set - When duplicates isn't allowed.
+    Map - When finding something by key matters.
+
+Interfaces can only extend other interfaces. It cannot extend classes. The "Implements" keyword is reserved or used only for interfaces.
+The "Extends" keyword is only applicable on classes, but it can be used on interfaces when you extend other interfaces. It won't work if you extend a class to an interface or vice versa.
