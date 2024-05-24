@@ -28,4 +28,15 @@ public class ReviewSongs {
     public String toString() {
         return getAuthor() + ", " + getTitle() + ", " + getBpm();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        ReviewSongs other = (ReviewSongs) obj;
+        return title.equals(((ReviewSongs) obj).getTitle());
+    }
+
+    @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
 }
