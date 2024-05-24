@@ -9,3 +9,11 @@ Collections:
 
 Interfaces can only extend other interfaces. It cannot extend classes. The "Implements" keyword is reserved or used only for interfaces.
 The "Extends" keyword is only applicable on classes, but it can be used on interfaces when you extend other interfaces. It won't work if you extend a class to an interface or vice versa.
+
+Reference Equality vs Object Equality
+    When two references maps to the same object, they are equal. But when each references has different objects, then they are not equal even if it has the same contents.
+    When you create an object, Java creates a unique hashcode or memory address that maps to that object. That's why if you compare two objects then they are not equal. Considering you did not override the hashcode() and equals()
+
+
+HashSets
+    Does not accept duplicates! When you add an object in a hash set, it checks for the hash code of the objects that are already in the set and compares it to the new object that you are trying to add. If the hashcode matches other hashcode, then it will try to compare the equals() of both objects. If it returns true, that means that the object to be added is a duplicate. The add() method returns true or false (if you care). False if it is a duplicate and true if not.
