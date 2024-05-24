@@ -29,6 +29,7 @@ public class ReviewSongs {
         return getAuthor() + ", " + getTitle() + ", " + getBpm();
     }
 
+    // Compares the title if a duplicate
     @Override
     public boolean equals(Object obj) {
         ReviewSongs other = (ReviewSongs) obj;
