@@ -17,3 +17,10 @@ Reference Equality vs Object Equality
 
 HashSets
     Does not accept duplicates! When you add an object in a hash set, it checks for the hash code of the objects that are already in the set and compares it to the new object that you are trying to add. If the hashcode matches other hashcode, then it will try to compare the equals() of both objects. If it returns true, that means that the object to be added is a duplicate. The add() method returns true or false (if you care). False if it is a duplicate and true if not.
+    a.equals(b) must imply a.hashcode() == b.hashcode. But a.hashcode() == b.hashcode() doesn't imply a.equals(b).
+
+TreeSets
+    This is the same as hashsets wherein it doesn't accept duplicates, but unlike hashset, treeset stay sorted.
+
+API
+    Application Programming Interface
