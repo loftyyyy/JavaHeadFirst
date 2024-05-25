@@ -1,9 +1,6 @@
 package com.mycompany.app;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 import static java.util.Collections.sort;
 
@@ -24,10 +21,13 @@ public class ReviewJukeBox {
 
         Set<ReviewSongs> songSet = new HashSet<>(songs);
         Set<ReviewSongs> songTreeSet = new TreeSet<>((o1, o2) -> Integer.compare(o2.getBpm(), o1.getBpm()));
+        Map<String, ReviewSongs> hashMap = new HashMap();
+        hashMap.put("Favorite Song", new ReviewSongs("Tame Impala", "The less I know the better" ,90));
         songTreeSet.addAll(songs);
 
         System.out.println(songTreeSet);
         System.out.println(songSet);
+        System.out.println(hashMap);
 
 
 

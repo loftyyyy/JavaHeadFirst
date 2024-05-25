@@ -4,8 +4,18 @@ Lambda - these can only be used on Functional Interfaces.
 
 Collections:
     List - When sequence matters.
+        ArrayList
+        LinkedList
+        Vector
     Set - When duplicates isn't allowed.
-    Map - When finding something by key matters.
+        HashSet
+        TreeSet
+        LinkedHashSet
+    Map - When finding something by key matters. It is a part of the Java Collection, but it does not implement the collection interface.
+        HashMap
+        TreeMap
+        LinkedHashMap
+        Hashtable
 
 Interfaces can only extend other interfaces. It cannot extend classes. The "Implements" keyword is reserved or used only for interfaces.
 The "Extends" keyword is only applicable on classes, but it can be used on interfaces when you extend other interfaces. It won't work if you extend a class to an interface or vice versa.
@@ -22,5 +32,17 @@ HashSets
 TreeSets
     This is the same as hashsets wherein it doesn't accept duplicates, but unlike hashset, treeset stay sorted.
 
+HashMap
+    This takes an argument of a key and a value. Map(key, value)
 API
     Application Programming Interface
+
+Convenience Factory Methods for Collections
+    allows you to easily create a List, Set, or Map that’s been prefilled with known data. There are a couple of things to understand about using them.
+    Creating list, sets, and maps using Convenience Factory Method
+    List<Integer> integers = List.of(1,2,3,4);
+    Sets<Integer> integers = Set.of(1,2,3,4);
+    Map<String, Integer> integer = Map.ofEntries(Map.entry("One", 1), Map.entry("two", 2));
+
+Generics
+    If you want to take a list of animals List<Animals>, it can take only a List<Animals>, not List<Dog> or List<Cat>.
