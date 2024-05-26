@@ -46,3 +46,7 @@ Convenience Factory Methods for Collections
 
 Generics
     If you want to take a list of animals List<Animals>, it can take only a List<Animals>, not List<Dog> or List<Cat>.
+
+Lambdas can be used in a loop where in you want to modify each item in a list. You will use a forEach method from the Iterable Interface.
+    List<Color> colors = List.of("red", "blue", "green");
+    colors.forEach(color -> System.out.println(color));
