@@ -10,6 +10,7 @@ public class ReviewMockUpSong2 {
         initialSong.add(new ReviewSongs("Radiohead", "No Surprises", 80));
         initialSong.add(new ReviewSongs("Don Tolver", "Bandit", 180));
         initialSong.add(new ReviewSongs("Tame Impala", "Let it happen", 980));
+
         initialSong.add(new ReviewSongs("Tame Impala", "Let it happen", 980));
 
 
