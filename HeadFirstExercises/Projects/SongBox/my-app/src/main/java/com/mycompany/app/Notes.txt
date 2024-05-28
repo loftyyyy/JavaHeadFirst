@@ -1,3 +1,4 @@
+Everything in Java are objects, except for primitive types.
 S.A.M -> Single Abstract Methods or Functional Interfaces are interfaces that only have one method.
 
 Lambda - these can only be used on Functional Interfaces.
@@ -51,17 +52,19 @@ Lambdas can be used in a loop where in you want to modify each item in a list. Y
     List<Color> colors = List.of("red", "blue", "green");
     colors.forEach(color -> System.out.println(color));
 
-Stream
+Streams API
     For starters, collection interface has a method, stream, which returns a Stream object for the collection.
         List<Integer> numbers = List.of(1,2,3,4);
         Stream<Integer> integerStream = numbers.stream();
-    Stream have 8 methods, namely:
-        filter
-        skip
-        limit
-        distinct
-        sorted
-        map
-        dropWhile
-        takeWhile
+    Stream methods that return another Stream are called intermediate operations. These are instructions of things to do, but they don't actually perform the operation on their own, the intermediate operations are namely:
+        filter()
+        skip()
+        limit()
+        distinct()
+        sorted()
+        map()
+        dropWhile()
+        takeWhile()
+    Aside from Intermediate Operations, there are also what they call, Terminal Operations. Terminal operators, read and process the intermediate operations.
+
 

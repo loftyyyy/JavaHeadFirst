@@ -42,5 +42,9 @@ public class ReviewJukeBox {
         List<ReviewSongs> newSong = limit.toList();
         newSong.forEach(song -> System.out.println(song));
 
+        List<Integer> intnumber = List.of(1,2,3,4,5);
+        List<Integer> numbers = intnumber.stream().filter(n -> n % 2 != 0).toList();
+        System.out.println(numbers);
+
     }
 }
