@@ -1,6 +1,7 @@
 package com.mycompany.app;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 import static java.util.Collections.sort;
 
@@ -29,7 +30,17 @@ public class ReviewJukeBox {
         System.out.println(songSet);
         System.out.println(hashMap);
 
+        Stream<ReviewSongs> setStream = songSet.stream();
+        Stream<ReviewSongs> treeSetStream = songTreeSet.stream();
+        Stream<ReviewSongs> mapStream = hashMap.values().stream();
 
+        Stream<ReviewSongs> limit = treeSetStream.limit(2);
+
+        System.out.println("Set: " + setStream + " " + "TreeSet: " + treeSetStream + " " + "mapStream: " + mapStream);
+        System.out.println("Set Limit: " +  limit);
+
+        List<ReviewSongs> newSong = limit.toList();
+        newSong.forEach(song -> System.out.println(song));
 
     }
 }

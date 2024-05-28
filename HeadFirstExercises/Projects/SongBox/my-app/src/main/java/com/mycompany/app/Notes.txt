@@ -50,3 +50,18 @@ Generics
 Lambdas can be used in a loop where in you want to modify each item in a list. You will use a forEach method from the Iterable Interface.
     List<Color> colors = List.of("red", "blue", "green");
     colors.forEach(color -> System.out.println(color));
+
+Stream
+    For starters, collection interface has a method, stream, which returns a Stream object for the collection.
+        List<Integer> numbers = List.of(1,2,3,4);
+        Stream<Integer> integerStream = numbers.stream();
+    Stream have 8 methods, namely:
+        filter
+        skip
+        limit
+        distinct
+        sorted
+        map
+        dropWhile
+        takeWhile
+
