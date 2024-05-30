@@ -4,6 +4,17 @@ public class ReviewSongs {
     private String author;
     private String title;
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    private String genre;
+    private int year;
+
     private int bpm;
     public String getAuthor() {
         return author;
@@ -18,10 +29,12 @@ public class ReviewSongs {
     }
 
 
-    public ReviewSongs(String a, String t, int b){
-        this.author = a;
-        this.title = t;
-        this.bpm = b;
+    public ReviewSongs(String title, String artist, String genre, int year, int bpm){
+        this.title = title;
+        this.author = artist;
+        this.genre = genre;
+        this.year = year;
+        this.bpm = bpm;
     }
 
     @Override

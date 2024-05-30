@@ -60,9 +60,9 @@ Streams API
         filter()
         skip()
         limit()
-        distinct()
+        distinct() - removes duplicates
         sorted()
-        map()
+        map() - turns an element into another element
         dropWhile()
         takeWhile()
     Aside from Intermediate Operations, there are also what they call, Terminal Operations. Terminal operators, read and process the intermediate operations.
